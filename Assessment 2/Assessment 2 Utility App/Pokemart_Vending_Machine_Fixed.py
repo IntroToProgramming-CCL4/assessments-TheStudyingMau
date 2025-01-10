@@ -583,6 +583,7 @@ def payment():
         # If the code exceeds 6 amount of tries, the code breaks the loop and the function ends with no changes.
 
         if count > 6:
+            clearconsolelines()
             print("It seems you are unable to pay for your purchases. Resetting system...\n")
             break
         
